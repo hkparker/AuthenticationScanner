@@ -19,6 +19,7 @@ type AuthSource struct {
 	DetectionMethod string		// Valid options: ResponseCode, Regex (have to go beneath the javascript to the api js is querying)
 	LoginSuccess string			// respose code to match if response code, regex to match if regex
 	LoginFailed string			// same as success but for failure.  Need both to confirm.
+	// Maybe have a field for login type (username or email), then apply the sites to the crentials dynamically
 }
 
 
@@ -58,6 +59,7 @@ func main() {
 	}
 	fmt.Println("Sites loaded:", site_count)
 	// parse arguments for proxies and such here
+	// single credentials to test?  a whole file of crenetials?
 	for _, site := range auth_source_array {
 		fmt.Println(site.Name)
 		// each site will "go attempt_to_login(site, results_channel)".  The attemp_to_login method with handle proxies.
