@@ -1,0 +1,9 @@
+{
+	"Name": "Example Site",
+	"URL": "http://127.0.0.1/login.php",
+	"HTTPVerb": "POST",
+	"Headers": "",
+	"DetectionMethod": "ResponseCode",
+	"LoginSuccess": "302",
+	"LoginFailed": "403"
+}

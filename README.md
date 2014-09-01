@@ -1,7 +1,7 @@
 AuthenticationScanner
 =====================
 
-This application uses goroutines to concurrently authenticate a set of credentials across multiple web applications.
+This application uses goroutines to concurrently authenticate a set of credentials against multiple web applications.  Authentication mechanisms are described in json encoded files which are loaded at runtime, making it easy to define many websites.
 
 Inspired by https://xkcd.com/792/
 
