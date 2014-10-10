@@ -43,9 +43,9 @@ func main(){
 	fmt.Println("Unmarshalling...")
 	parents := &Parents{}
 	err := json.Unmarshal([]byte(json_encoded), &parents)
-    if err != nil {
-        panic(err)
-    }
+	if err != nil {
+		panic(err)
+	}
 	fmt.Println("Created struct:")
 	fmt.Printf("Mother: %s\n", parents.Mother)
 	fmt.Printf("Father: %s\n", parents.Father)
