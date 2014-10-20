@@ -16,7 +16,7 @@ type Parents struct {
 func (parents Parents) GrandmotherOnMotherSide() (name string, err error) {
 	defer func() {
         if r := recover(); r != nil {
-            err = errors.New("Error: father name not present")
+            err = errors.New("Error: mother name not present")
         }
     }()
     name = parents.MothersParents.Mother
