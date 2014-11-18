@@ -58,12 +58,11 @@ func main() {
 		log.Fatal("No usable sites loaded, exiting.")
 	}
 	fmt.Println("Sites loaded:", site_count)
-	// parse arguments for proxies and such here
-	// single credentials to test?  a whole file of crenetials?
+	// single credentials to test
 	for _, site := range auth_source_array {
 		fmt.Println(site.Name)
-		// each site will "go attempt_to_login(site, results_channel)".  The attemp_to_login method with handle proxies.
+		// each site will "go attempt_to_login(site, results_channel)".
 	}
 	// a recieving function will loop site_count times and read login results from the results_channel
-	// the recieving method returns a list of results, with are parsed and printed out.
+	// the recieving method returns a list of results, witch are parsed and printed out.
 }

@@ -2,7 +2,7 @@
 	"Name": "Example Site 2",
 	"URL": "http://127.0.0.1/login.php",
 	"HTTPVerb": "POST",
-	"Headers": "",
+	"Headers": ["", ""],
 	"DetectionMethod": "ResponseCode",
 	"PossibleResults": [{
 		"Success": "302",
