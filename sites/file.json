@@ -1,9 +1,13 @@
 {
-	"Name": "Example Site",
+	"Name": "Example Site 1",
 	"URL": "http://127.0.0.1/login.php",
 	"HTTPVerb": "POST",
-	"Headers": "",
+	"Headers": {"X-cutsom-username": "#{USERNAME}",
+				"X-cutsom-password": "#{PASSWORD}"},
+	"BasicAuth": 0,
+	"Body": "",
+	"ParseForm": 0,
 	"DetectionMethod": "ResponseCode",
-	"LoginSuccess": "302",
-	"LoginFailed": "403"
+	"Success": "302",
+	"Failed": "403"
 }
